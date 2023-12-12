@@ -1,11 +1,11 @@
 plugins {
   id("java")
-  id("org.jetbrains.intellij") version "1.15.0"
+  id("org.jetbrains.intellij") version "1.16.0"
   kotlin("jvm") version "1.9.21"
 }
 
 group = "com.saigyoujinexas"
-version = "1.5"
+version = "1.6"
 
 repositories {
   mavenCentral()
@@ -17,7 +17,7 @@ intellij {
   version.set("2022.2.5")
   type.set("IC") // Target IDE Platform
 
-  plugins.set(listOf(/* Plugin Dependencies */))
+  plugins.set(listOf("android"))
 }
 
 tasks {
@@ -30,7 +30,7 @@ tasks {
 
   patchPluginXml {
     sinceBuild.set("222")
-    untilBuild.set("232.*")
+    untilBuild.set("")
   }
 
   signPlugin {
