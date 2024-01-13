@@ -13,7 +13,16 @@
   <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
        Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
        Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
-  <description>a plugin can auto connect to wsa interface</description>
+  <description>
+    A plugin can auto connect to wsa interface
+    You need setting the Subsystem Resource to Distribute Forever in Memory and Performance ,  and set the adb path to your Path environment variable.
+    install the plugin and restart the IDE, the adb will auto connect to the Windows Subsystem For Android.
+    When a Android project successful build, the adb will connect to the wsa directly, you do not need input the command line in your console.
+    If adb is not connected, please restart your IDE, it will try connect again.
+    If you have more good idea, please create your pull request on your github.
+    This Github address of this plugin is https://github.com/SaigyoujiNexas/AutoWSAConnection.
+    Thank for your use.
+  </description>
 
   <!-- Product and plugin compatibility requirements.
        Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
